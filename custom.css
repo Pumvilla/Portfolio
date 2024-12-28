@@ -139,6 +139,10 @@ vertical-align: middle;
 }
 }
 
+img {
+    opacity: 100%;
+}
+
 img.expansive {
     transition:transform 0.25s ease;
 }
