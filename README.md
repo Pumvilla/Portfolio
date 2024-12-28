@@ -1,1 +1,1 @@
-This is Ryan Rennie's professional portfolio.
+This is Cassidy Rennie's professional portfolio.
