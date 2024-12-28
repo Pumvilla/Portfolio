@@ -1,0 +1,149 @@
+@media (prefers-color-scheme: dark) {
+    :root, body {
+        --primary: #fffbf2;
+        --secondary: #421a17;
+        --accent: #ff997f;
+        --highlight: #FFECC1;
+        --gradient: linear-gradient(to right, var(--highlight), var(--accent));
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root, body {
+        --primary: #fffbf2;
+        --secondary: #421a17;
+        --accent: #ff997f;
+        --highlight: #FFECC1;
+        --gradient: linear-gradient(to right, var(--highlight), var(--accent));
+    }
+}
+
+body {
+    background-image: url("images/happy_hearts_tile.png");
+    background-size: 42%;
+    background-repeat: repeat;
+}
+
+h1 {
+    color: var(--accent);
+}
+
+h3#subtitle {
+    margin-top: 0%;
+}
+
+:root, body {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+a {
+    color: var(--accent);
+}
+
+a.project {
+    color: var(--highlight);
+}
+
+p.private-project {
+    color: var(--highlight);
+}
+
+span.private-project {
+    color: var(--accent);
+    font-weight: 100;
+    padding: 2%;
+}
+
+div.project {
+    color: var(--secondary);
+    padding: 2% 5% 5% 5%;
+    margin: 5%;
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+}
+
+.gradient {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    padding: 10px;
+}
+
+img.profile {
+    max-width: 50%;
+    border-radius: 32px;
+    padding: 10px;
+}
+
+.embedded-round-corners {
+    margin-top: 2%;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 16px;
+}
+
+h4.project, p.project {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+ul.social-cont {
+    list-style: none;
+}
+
+li.social-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+.column {
+    flex: 50%;
+    max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+.column {
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+img.expansive {
+    transition:transform 0.25s ease;
+}
+
+img.expansive:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
